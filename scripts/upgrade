@@ -18,11 +18,11 @@ source /usr/share/yunohost/helpers
 
 app=$YNH_APP_INSTANCE_NAME
 
-domain=$(ynh_app_setting_get --app=$app --key=domain)
-path_url=$(ynh_app_setting_get --app=$app --key=path)
-install_dir=$(ynh_app_setting_get --app=$app --key=install_dir)
-phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
-secret_key=$(ynh_app_setting_get --app=$app --key=secret_key)
+#domain=$(ynh_app_setting_get --app=$app --key=domain)
+#path_url=$(ynh_app_setting_get --app=$app --key=path)
+#install_dir=$(ynh_app_setting_get --app=$app --key=install_dir)
+#phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
+#secret_key=$(ynh_app_setting_get --app=$app --key=secret_key)
 
 #=================================================
 # CHECK VERSION
