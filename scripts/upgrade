@@ -59,10 +59,10 @@ ynh_clean_setup () {
 ynh_script_progression --message="Ensuring downward compatibility..." --weight=1
 
 # If final_path doesn't exist, create it
-if [[ -z "${install_dir:-}" ]]; then
-	install_dir=/var/www/$app
-	ynh_app_setting_set --app=$app --key=install_dir --value=$install_dir
-fi
+#if [[ -z "${install_dir:-}" ]]; then
+#	install_dir=/var/www/$app
+#	ynh_app_setting_set --app=$app --key=install_dir --value=$install_dir
+#fi
 
 # If secret_key doesn't exist, create it
 if [[ -z "${secret_key:-}" ]]; then
@@ -75,7 +75,7 @@ fi
 #=================================================
 
 [[ $YNH_APP_ID == "garradin" ]] \
-	&& [[ "$(cat "$final_path/VERSION")" != 1.2.4 ]] \
+	&& [[ "$(cat "$install_dir/VERSION")" != 1.2.4 ]] \
 	&& ynh_die --message "It looks like that you have an old Garradin installed. You need to first upgrade your Garradin instance (id: $garradin_migrate_id) and after to migrate to Paheko."
 
 ynh_handle_app_migration --migration_id=garradin --migration_list=garradin_migrations
