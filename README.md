@@ -56,6 +56,8 @@ The --debug option will let you see the full output. If you encounter any issue,
 
 **Important**: After the migration, you'll have to wait a couple of minutes (at most 3 minutes) before you can start using Paheko.
 
+Once the migration is done, you should then upgrade to new release of garradin.
+
 ## Documentation and resources
 
 * Official app website: <https://paheko.cloud>
