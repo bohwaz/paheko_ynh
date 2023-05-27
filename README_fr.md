@@ -52,6 +52,8 @@ L'option debug vous permet de voir l'entièreté du journal d'installation. Si v
 
 **Important** : Après la migration, veuillez attendre quelques instants (maximum 3 minutes) avant de commencer à utiliser Paheko.
 
+Une fois la migration terminée, vous pourrez mettre à jour avec la dernière version stable.
+
 ## Documentations et ressources
 
 * Site officiel de l’app : <https://paheko.cloud>
